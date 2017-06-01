@@ -2,15 +2,22 @@
 
 // Yours will take in two arguments. The first will be an array to map and the second will be a callback function. The function will return a new array based on the results of the callback function.
 
-//function that takes a callback function as the second parameter
+// Callback Functions
+
+function sortAlphabeticallyAscending(arr) {
+  return arr.sort();
+}
+
+function sortAlphabeticallyDescending(arr) {
+  arr.sort();
+  return arr.reverse();
+}
+
+// Function that takes one of the callback functions as the second parameter and outputs the new array
+
 function myMapFunction(arr, cbSortAlphabeticallyAscending) {
   var newArr = cbSortAlphabeticallyAscending(arr);
   console.log(newArr);
-}
-
-//Callback Function
-function sortAlphabeticallyAscending(arr) {
-  return arr.sort();
 }
 
 //call the myMapFunction
